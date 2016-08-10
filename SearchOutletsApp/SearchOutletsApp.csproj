@@ -114,6 +114,10 @@
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\index.js" />
+    <Content Include="static\css\font-awesome.min.css" />
+    <Content Include="static\css\icon.css" />
+    <Content Include="static\fonts\fontawesome-webfont.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Views\UserList.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -136,6 +140,25 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="static\fonts\fontawesome-webfont.eot" />
+    <Content Include="static\fonts\fontawesome-webfont.ttf" />
+    <Content Include="static\fonts\fontawesome-webfont.woff" />
+    <Content Include="static\fonts\fontawesome-webfont.woff2" />
+    <Content Include="static\fonts\FontAwesome.otf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="static\fonts\roboto\Roboto-Thin.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
