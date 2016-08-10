@@ -80,6 +80,8 @@
     <Compile Include="Exceptions\EmptyException.cs" />
     <Compile Include="Exceptions\NotSingleException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchObjects\Contact.cs" />
+    <Compile Include="SearchObjects\Outlet.cs" />
     <Compile Include="SearchObjects\User.cs" />
   </ItemGroup>
   <ItemGroup>
