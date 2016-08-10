@@ -25,7 +25,7 @@ namespace SearchOutletsApp.Controllers
 
         // GET api/<controller>
         [Route("")]
-        public IEnumerable<User> GetUses()
+        public IEnumerable<User> GetUsers()
         {
             return GetAllUsers();
         }
