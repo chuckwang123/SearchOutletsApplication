@@ -91,7 +91,8 @@ namespace SearchOutletsApp.Controllers
                 OutletId = outlet.Id,
                 OutletName = outlet.Name,
                 Profile = contact.Profile,
-                Title = contact.Title
+                Title = contact.Title,
+                Name = contact.FirstName + " " + contact.LastName
             };
         }
         #endregion
