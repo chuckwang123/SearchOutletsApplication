@@ -44,12 +44,12 @@ namespace SearchOutletsApp.Controllers
             var listofUsers = collectOfUsers as IList<User> ?? collectOfUsers.ToList();
             if (!listofUsers.Any())
             {
-                throw new EmptyException("Not found the User Id");
+                throw new SearchOutletsException("Not found the User Id");
             }
 
             if (listofUsers.Count() > 1)
             {
-                throw new NotSingleException("The id is not unique");
+                throw new SearchOutletsException("The id is not unique");
             }
 
             return listofUsers.FirstOrDefault();
@@ -71,7 +71,7 @@ namespace SearchOutletsApp.Controllers
             var listofUsers = collectOfUsers as IList<User> ?? collectOfUsers.ToList();
             if (!listofUsers.Any())
             {
-                throw new EmptyException("Not found the Contact Id");
+                throw new SearchOutletsException("Not found the Contact Id");
             }
             return listofUsers;
         }
