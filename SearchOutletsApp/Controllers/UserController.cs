@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Newtonsoft.Json;
+using SearchOutletsApp.Interfaces;
 using SearchOutletsApp.Model.Exceptions;
 using SearchOutletsApp.Model.SearchObjects;
 using SearchOutletsApp.Util;
@@ -12,13 +13,14 @@ namespace SearchOutletsApp.Controllers
     [RoutePrefix("api/Users")]
     public class UserController : ApiController
     {
-        private readonly WebConfig _webconfig;
-        private readonly FileReader _file;
+        private readonly IConfigurationManager _webconfig;
+        private readonly IFileReader _file;
 
-        public UserController()
+        public UserController(): this(new SearchOutletsFactory()) { }
+        public UserController(IFactory factory)
         {
-            _webconfig = new WebConfig();
-            _file = new FileReader();
+            _webconfig = factory.WebConfig;
+            _file = factory.Files;
         }
 
         // GET api/<controller>
@@ -28,6 +30,7 @@ namespace SearchOutletsApp.Controllers
             return GetAllUsers();
         }
 
+        #region Not Used so far, Ignored
         // GET api/<controller>/5
         [Route("{id:int}")]
         public User GetUserByUserId(int id)
@@ -75,6 +78,8 @@ namespace SearchOutletsApp.Controllers
             }
             return listofUsers;
         }
+
+        #endregion
 
         #region Methods
         private IEnumerable<User> GetAllUsers()

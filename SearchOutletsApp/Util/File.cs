@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Web.Hosting;
+using SearchOutletsApp.Interfaces;
 
 namespace SearchOutletsApp.Util
 {
-    public class FileReader
+    public class FileReader : IFileReader
     {
-        private readonly WebConfig _webconfig = new WebConfig();
+        private readonly IConfigurationManager _webconfig = new WebConfig();
 
         public string GetFile(string fileName)
         {
